@@ -1,0 +1,117 @@
+
+
+.navbar {
+    background-color: #1a2a29;
+
+    height: 2cm;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 5r;
+    top: 0;
+    z-index: 100000 !important;
+  }
+  
+  .menu-bars {
+    margin-left:  1rem;
+    font-size: 2rem;
+    background: none;
+    color: rgb(128, 124, 124);
+    z-index: 100000 !important;
+  }
+  
+  .nav-menu {
+    background-color: #1a2a29;
+    width: 250px;
+    height: 150vh;
+    display: relative;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 100000 !important;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+    transition: 350ms;
+    z-index: 100000 !important;
+  }
+  
+  .nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+    z-index: 100000 !important;
+  }
+  
+  .nav-text a {
+    text-decoration: none;
+    color: rgb(128, 124, 124);
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    z-index: 100000 !important;
+  }
+  
+  .nav-text a:hover {
+    background-color: #ffffff;
+    z-index: 100000 !important;
+  }
+  
+  .nav-menu-items {
+    width: 100%;
+    z-index: 100000 !important;
+  }
+  
+  .navbar-toggle {
+    background-color: #1a2a29;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 100000 !important;
+  }
+  
+  span {
+    margin-left: 16px;
+    z-index: 100000 !important;
+  }
+
+button[id="Logout-btn"] {
+    text-decoration: none;
+    font-size: 18px;
+    width: 95%;
+    height: 3%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, rgb(128, 124, 124) 50%,rgb(128, 124, 124), #508d89); 
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 180%;
+    z-index: 100000 !important;
+  }
+button[id="Logout-btn"]:hover{
+    background-position: 100% 0%;
+    z-index: 100000 !important;
+  }
+
+img[id="logo-in-nav"]{
+    padding-left: 35%;
+    z-index: 100000 !important;
+}

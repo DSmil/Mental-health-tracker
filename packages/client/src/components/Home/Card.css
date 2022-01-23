@@ -1,0 +1,78 @@
+.Card{
+    width: 300px;
+    height: 480px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px 1px #508d89;
+    color: black;
+    overflow: hidden;
+    margin: 5%;
+
+    
+}
+
+.upper-container{
+    height: 100px;
+    background: linear-gradient(to left, #1a2a29, #303c5e);
+}
+
+.image-container img{
+    background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translate(95px,45px);
+    border: 2px solid #1a2a29;
+}
+
+.lower-container{
+    height: 300px;
+    background: white;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.lower-container h3,h4,p {
+    margin:0;
+    padding: 0;
+}
+
+.lower-container h3{
+    margin-top: 3rem;
+    color:#1a2a29;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.lower-container p{
+    margin:1rem;
+    font-family: sans-serif;
+    color:#1a2a29;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.btn-card{
+    width: 2.7cm;
+    height: 0.9cm;
+    margin: 1rem;
+    color: #303c5e;
+    font: bold;
+    background-color: white;
+    border: 2px solid #508d89;
+    padding: 0.2rem;
+    padding-left: 0.6rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    animation: ease-out;
+    text-align: justify;
+}
+
+.btn-card:hover{
+    background: linear-gradient(to left, #1a2a29, #508d89);
+    transform: scale(1.1);
+    border: none;
+    color: white;
+}
