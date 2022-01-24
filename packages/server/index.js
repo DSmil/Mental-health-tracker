@@ -9,6 +9,11 @@ const server = require("http").createServer(app);
 const Redis = require("ioredis");
 const RedisStore = require("connect-redis") (session)
 require("dotenv").config();
+const path = require("path")
+const PORT = process.env.PORT || 4000;
+
+
+
 const io = new Server(server, {
   cors: {
     origin: "http://localhost:3000",
@@ -44,7 +49,15 @@ app.use(
 app.use("/auth", authRouter);
 
 io.on("connect", socket => {});
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static(path.join(__dirname,"../client/build")))
+}
 
-server.listen(4000, () => {
-  console.log("Server listening on port 4000");
+app.get("*", (req,res)=>
+{
+  res.sendFile(path.join(__dirname, "../client/build/index.html"))
+})
+
+server.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
