@@ -8,11 +8,11 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "cd packgaes/server && node index.js",
+    "start": "cd packages/server && node index.js",
     "heroku-postbuild": "cd packages/client && npm install && npm run build"
   },
   "engines": {
-    "node": "10.13.0",
+    "node": "16.13.0",
     "npm": "8.1.0"
   }
 
