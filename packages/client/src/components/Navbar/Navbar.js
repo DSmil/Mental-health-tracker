@@ -16,7 +16,7 @@ function Navbar (props) {
     const Logout = () => {
 
 
-      fetch("http://localhost:4000/auth/logout", {
+      fetch("/auth/logout", {
         method: "GET",
         credentials: 'include',
         headers: {

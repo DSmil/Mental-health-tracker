@@ -31,13 +31,13 @@ function DetailSection(props) {
     const [available, setAvailable] = React.useState([]);
      
      let data = {};
-     var localget1 = 'http://localhost:4000/auth/scheduler';
+     var localget1 = '/auth/scheduler';
      var serverget1 = 'http://jstest.senlab.io/davor-backend/render-appointments';
    
      var localget2 = 'http://localhost:3005/render-availability';
      var serverget2 = 'http://jstest.senlab.io/davor-backend/render-availability';
    
-     var localget3 = 'http://localhost:4000/auth/add-reservation';
+     var localget3 = '/auth/add-reservation';
      var serverget3 = 'http://jstest.senlab.io/davor-backend/add-availability';
    
      useEffect(() => {
